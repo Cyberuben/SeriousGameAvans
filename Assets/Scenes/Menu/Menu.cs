@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Menu : MonoBehaviour
 {
@@ -8,6 +9,7 @@ public class Menu : MonoBehaviour
 
     public int _selectedScreen;
     private Vector3 _destination;
+    private float _menuDistance;
     // Use this for initialization
     void Start()
     {
@@ -16,7 +18,7 @@ public class Menu : MonoBehaviour
         Camera camera = Camera.main;
         float height = 2f * camera.orthographicSize;
         float width = height * camera.aspect;
-        float menuDistance = Mathf.Sqrt(width * width + height * height);
+        _menuDistance = Mathf.Sqrt(width * width + height * height);
 
         if (screens != null)
         {
@@ -25,7 +27,7 @@ public class Menu : MonoBehaviour
             for (int i = 1; i < screens.Count; i++)
             {
                 Vector3 direction = (screens[i].transform.position - screens[0].transform.position).normalized;
-                screens[i].transform.position = direction * menuDistance;
+                screens[i].transform.position = direction * _menuDistance;
             }
         }
     }
@@ -35,6 +37,21 @@ public class Menu : MonoBehaviour
         _selectedScreen = screen;
         _destination = screens[_selectedScreen].transform.position;
         _destination.z = -10;
+
+        if (screens[screen].gameObject.name.Equals("Start"))
+        {
+            StartCoroutine(StartGame());
+        }
+    }
+
+    IEnumerator StartGame()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Street");
+
+        while(!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 
     // Update is called once per frame
@@ -47,7 +64,7 @@ public class Menu : MonoBehaviour
 
         if (transform.position != _destination)
         {
-            float delta = 8.0f * Time.deltaTime;
+            float delta = (_menuDistance / 0.5f) * Time.deltaTime;
             Vector3 nextPosition = Vector3.MoveTowards(transform.position, _destination, delta);
 
             transform.position = nextPosition;
