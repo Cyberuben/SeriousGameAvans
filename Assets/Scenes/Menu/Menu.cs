@@ -41,14 +41,30 @@ public class Menu : MonoBehaviour
         if (screens[screen].gameObject.name.Equals("Start"))
         {
             StartCoroutine(StartGame());
+
+        }
+        else if (screens[screen].gameObject.name.Equals("ScoreBoard"))
+        {
+            StartCoroutine(StartScoreBoard());
         }
     }
 
+    //Make this generic?
     IEnumerator StartGame()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Street");
 
         while(!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    IEnumerator StartScoreBoard()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("ScoreBoard");
+
+        while (!asyncLoad.isDone)
         {
             yield return null;
         }
