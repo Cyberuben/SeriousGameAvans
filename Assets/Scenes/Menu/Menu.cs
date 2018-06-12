@@ -52,6 +52,8 @@ public class Menu : MonoBehaviour
     //Make this generic?
     IEnumerator StartGame()
     {
+        GameController.Instance.StartGame();
+
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Street");
 
         while(!asyncLoad.isDone)
