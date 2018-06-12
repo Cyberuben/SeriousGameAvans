@@ -18,6 +18,21 @@ public class Street : MonoBehaviour {
         List<int> indices = GameController.Instance.HouseIndices();
         _houses = new List<GameObject>();
 
+        if (GameController.Instance.cameraPosition == Vector3.zero)
+        {
+            Camera camera = Camera.main;
+            float screenHeight = 2f * camera.orthographicSize;
+            float screenWidth = screenHeight * camera.aspect;
+            float screenWidthHalf = screenWidth / 2.0f;
+
+            this.transform.position = new Vector3(-5.0f + screenWidthHalf, camera.orthographicSize - 0.25f, -10.0f);
+            GameController.Instance.cameraPosition = this.transform.position;
+        }
+        else
+        {
+            this.transform.position = GameController.Instance.cameraPosition;
+        }
+
         for (int i = 0; i < indices.Count; i++)
         {
             GameObject house = Instantiate(_config.housePrefabs[indices[i]], Vector3.zero, Quaternion.identity);
@@ -37,6 +52,23 @@ public class Street : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            if (GameController.Instance.IsPaused())
+            {
+                GameController.Instance.ResumeGame();
+            }
+            else
+            {
+                GameController.Instance.PauseGame();
+            }
+        }
+
+        if (GameController.Instance.IsPaused())
+        {
+            return;
+        }
+
 		if (Input.GetMouseButtonDown(0))
         {
             _dragStart = Input.mousePosition;
@@ -67,5 +99,7 @@ public class Street : MonoBehaviour {
         {
             this.transform.position = new Vector3(_streetWidth + 5.0f - screenWidthHalf, this.transform.position.y, this.transform.position.z);
         }
+
+        GameController.Instance.cameraPosition = this.transform.position;
 	}
 }

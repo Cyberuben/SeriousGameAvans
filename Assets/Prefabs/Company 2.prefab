@@ -399,8 +399,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1512748777461812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 4.383571, y: -7.164045, z: -1.0174004}
-  m_LocalScale: {x: 3.8617733, y: 6.412514, z: 1}
+  m_LocalPosition: {x: 3.15, y: 3.25, z: -1.349}
+  m_LocalScale: {x: 2.8934658, y: 4.8046293, z: 0.7492583}
   m_Children:
   - {fileID: 4977544891747228}
   - {fileID: 4164932391361672}
@@ -414,8 +414,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1360783829883802}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -1.34, z: 0}
-  m_LocalScale: {x: 33, y: -0.24768566, z: 1}
+  m_LocalPosition: {x: -0.005, y: 7.623, z: -0.588}
+  m_LocalScale: {x: 33, y: -0.24768564, z: 1}
   m_Children: []
   m_Father: {fileID: 4779418097075116}
   m_RootOrder: 7
@@ -427,8 +427,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1817144133114454}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -0.6164288, y: -7.164045, z: -0.01740044}
-  m_LocalScale: {x: 3.8617733, y: 6.412514, z: 1}
+  m_LocalPosition: {x: -0.5959997, y: 3.25, z: -0.601}
+  m_LocalScale: {x: 2.8934658, y: 4.8046293, z: 0.7492583}
   m_Children:
   - {fileID: 4339415765108878}
   - {fileID: 4299920868246464}
@@ -455,8 +455,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1731558694355818}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -0.47, z: 0}
-  m_LocalScale: {x: 33, y: 1.5, z: 1}
+  m_LocalPosition: {x: -0.013, y: 8.267, z: -0.588}
+  m_LocalScale: {x: 25, y: 1.1238874, z: 0.7492583}
   m_Children: []
   m_Father: {fileID: 4779418097075116}
   m_RootOrder: 5
@@ -494,8 +494,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1410010765392296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: -6.48, z: 0}
-  m_LocalScale: {x: 33, y: 10, z: 1}
+  m_LocalPosition: {x: 0, y: 3.763, z: -0.588}
+  m_LocalScale: {x: 25, y: 7.492583, z: 0.7492583}
   m_Children: []
   m_Father: {fileID: 4779418097075116}
   m_RootOrder: 6
@@ -533,8 +533,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1553545167539294}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 9.383572, y: -7.164045, z: -1.0174004}
-  m_LocalScale: {x: 3.8617733, y: 6.412514, z: 1}
+  m_LocalPosition: {x: 6.8970003, y: 3.25, z: -1.349}
+  m_LocalScale: {x: 2.8934658, y: 4.8046293, z: 0.7492583}
   m_Children:
   - {fileID: 4467286228640716}
   - {fileID: 4882111926098354}
@@ -548,8 +548,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1823527430235874}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -5.616429, y: -7.164045, z: -1.0174004}
-  m_LocalScale: {x: 3.8617733, y: 6.412514, z: 1}
+  m_LocalPosition: {x: -4.342, y: 3.25, z: -1.349}
+  m_LocalScale: {x: 2.8934658, y: 4.8046293, z: 0.7492583}
   m_Children:
   - {fileID: 4374069956170372}
   - {fileID: 4632306198453454}
@@ -576,8 +576,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1567339458323280}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 4.6, z: 0}
-  m_LocalScale: {x: 0.5, y: 0.4, z: 0.5}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4621553531687086}
   - {fileID: 4535214456095544}
@@ -624,8 +624,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1199670145119264}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -14.18, y: -8.88, z: -4.604866}
-  m_LocalScale: {x: 2.635023, y: 5, z: 0.93536997}
+  m_LocalPosition: {x: -10.759, y: 1.25, z: -4.038}
+  m_LocalScale: {x: 1, y: 2, z: 1}
   m_Children:
   - {fileID: 4163989255417110}
   - {fileID: 4460219052690390}
@@ -656,8 +656,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 41, y: 15.5, z: 1}
-  m_Center: {x: 0, y: -3.8, z: 0}
+  m_Size: {x: 27, y: 10, z: 1}
+  m_Center: {x: 0, y: 5, z: 0}
 --- !u!114 &114399288941017288
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1130,7 +1130,7 @@ SpriteRenderer:
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 1
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.7571459, y: 0.8110717}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

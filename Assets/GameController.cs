@@ -5,7 +5,7 @@ using UnityEngine;
 public class GameController : Singleton<GameController> {
     public GameObject GameControllerSingle;
     public Difficulty difficulty;
-    public float cameraPosition;
+    public Vector3 cameraPosition = Vector3.zero;
 
     public enum Difficulty
     {
@@ -50,11 +50,14 @@ public class GameController : Singleton<GameController> {
         return _indicatorsFound;
     }
 
+    public int Score()
+    {
+        return _score;
+    }
+
     public void StartGame()
     {
         GameControllerConfig gameControllerConfig = GameObject.FindGameObjectWithTag("GameControllerConfig").GetComponent<GameControllerConfig>();
-
-        cameraPosition = 0.0f;
 
         _paused = false;
         _score = 0;
