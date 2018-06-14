@@ -13,9 +13,11 @@ public class Street : MonoBehaviour {
     private Vector3 _cameraStart;
 
 	void Start () {
-        _config = gameControllerConfig.GetComponent<GameControllerConfig>();
+        if (GameController.Instance.gameState == GameController.GameState.MENU)
+        {
+            GameController.Instance.StartGame();
+        }
 
-        List<int> indices = GameController.Instance.HouseIndices();
         _houses = new List<GameObject>();
 
         if (GameController.Instance.cameraPosition == Vector3.zero)
@@ -33,12 +35,18 @@ public class Street : MonoBehaviour {
             this.transform.position = GameController.Instance.cameraPosition;
         }
 
-        for (int i = 0; i < indices.Count; i++)
+        for (int i = 0; i < GameController.Instance.houses.Count; i++)
         {
-            GameObject house = Instantiate(_config.housePrefabs[indices[i]], Vector3.zero, Quaternion.identity);
+            GameObject house = Instantiate(GameController.Instance.houses[i].prefab, Vector3.zero, Quaternion.identity);
             _houses.Add(house);
             float width = house.GetComponent<Collider>().bounds.size.x;
             house.transform.position = new Vector3(_streetWidth + (width / 2.0f), 0, 0);
+            IndicatorController indicatorController = house.GetComponent<IndicatorController>();
+            indicatorController.houseIndex = i;
+            if (GameController.Instance.houses[i].indicator != null)
+            {
+                indicatorController.EnableIndicator(GameController.Instance.houses[i].indicator);
+            }
             _streetWidth += width;
         }
 

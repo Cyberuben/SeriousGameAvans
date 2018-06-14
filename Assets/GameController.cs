@@ -6,6 +6,8 @@ public class GameController : Singleton<GameController> {
     public GameObject GameControllerSingle;
     public Difficulty difficulty;
     public Vector3 cameraPosition = Vector3.zero;
+    public GameState gameState = GameState.MENU;
+    public List<HouseState> houses;
 
     public enum Difficulty
     {
@@ -14,77 +16,87 @@ public class GameController : Singleton<GameController> {
         HARD
     }
 
-    private int _score = 0;
-    private List<int> _houseIndices;
-    private int _timeLeft = 0;
-    private bool _paused = true;
-    private int _indicatorsFound = 0;
-    private int _indicatorsCount = 10;
+    public enum GameState
+    {
+        MENU,
+        PLAYING,
+        PAUSED,
+        ENDED
+    }
+
+    [System.Serializable]
+    public class HouseState
+    {
+        public GameObject prefab;
+        public string indicator;
+        public bool indicatorFound = false;
+    }
+
+    public int Score = 0;
+    public int TimeLeft = 0;
+    public int IndicatorsFound = 0;
+    public int IndicatorsTotal = 10;
 
     protected GameController() {
         
     }
 
-    public int TimeLeft()
-    {
-        return _timeLeft;
-    }
-
     public bool IsPaused()
     {
-        return _paused;
+        return gameState == GameState.PAUSED;
     }
 
-    public List<int> HouseIndices()
+    public void AddScore(int amount)
     {
-        return _houseIndices;
-    }
-
-    public int IndicatorCount()
-    {
-        return _indicatorsCount;
-    }
-
-    public int IndicatorsFound()
-    {
-        return _indicatorsFound;
-    }
-
-    public int Score()
-    {
-        return _score;
+        Score += amount;
     }
 
     public void StartGame()
     {
         GameControllerConfig gameControllerConfig = GameObject.FindGameObjectWithTag("GameControllerConfig").GetComponent<GameControllerConfig>();
 
-        _paused = false;
-        _score = 0;
-        _indicatorsFound = 0;
+        Score = 0;
+        IndicatorsFound = 0;
 
         int amountHouses = 0;
         if (difficulty == Difficulty.EASY)
         {
             amountHouses = 15;
-            _timeLeft = 300; // 5 minutes
+            TimeLeft = 300; // 5 minutes
         }
         else if (difficulty == Difficulty.MEDIUM)
         {
             amountHouses = 20;
-            _timeLeft = 240; // 4 minutes
+            TimeLeft = 240; // 4 minutes
         }
         else if (difficulty == Difficulty.HARD)
         {
             amountHouses = 25;
-            _timeLeft = 180; // 3 minutes
+            TimeLeft = 180; // 3 minutes
         }
 
-        _houseIndices = new List<int>();
+        houses = new List<HouseState>();
         for (int i = 0; i < amountHouses; i++)
         {
-            _houseIndices.Add(Mathf.FloorToInt(Random.Range(0, gameControllerConfig.housePrefabs.Count - 0.01f)));
+            HouseState house = new HouseState();
+            house.prefab = gameControllerConfig.housePrefabs[Mathf.FloorToInt(Random.Range(0, gameControllerConfig.housePrefabs.Count - 0.01f))];
+            houses.Add(house);
         }
+
+        int indicatorsGenerated = 0;
+        while (indicatorsGenerated < IndicatorsTotal)
+        {
+            int index = Mathf.FloorToInt(Random.Range(0, amountHouses - 0.01f));
+            if (houses[index].indicator == null)
+            {
+                IndicatorController controller = houses[index].prefab.GetComponent<IndicatorController>();
+                int indicatorIndex = Mathf.FloorToInt(Random.Range(0, controller.indicators.Count - 0.01f));
+                houses[index].indicator = controller.indicators[indicatorIndex].name;
+                indicatorsGenerated++;
+            }
+        }
+
+        gameState = GameState.PLAYING;
 
         StartCoroutine(DecrementTimer());
     }
@@ -92,47 +104,51 @@ public class GameController : Singleton<GameController> {
     private IEnumerator DecrementTimer()
     {
         yield return new WaitForSeconds(1);
-        _timeLeft--;
 
-        if (_timeLeft == 0)
+        if (gameState != GameState.PLAYING)
+        {
+            yield break;
+        }
+
+        TimeLeft--;
+
+        if (TimeLeft == 0)
         {
             EndGame();
+            yield break;
         }
 
-        if (!_paused)
-        {
-            StartCoroutine(DecrementTimer());
-        }
+        StartCoroutine(DecrementTimer());
     }
 
     public void PauseGame()
     {
-        _paused = true;
+        gameState = GameState.PAUSED;
     }
 
     public void ResumeGame()
     {
-        _paused = false;
+        gameState = GameState.PLAYING;
 
         StartCoroutine(DecrementTimer());
     }
 
     public void EndGame()
     {
-        _paused = true;
-
-        if (_timeLeft > 0)
+        if (TimeLeft > 0)
         {
-            _score += _timeLeft * 10;
+            Score += TimeLeft * 10;
         }
 
-        if (_indicatorsFound != _indicatorsCount)
+        if (IndicatorsFound != IndicatorsTotal)
         {
             // Game over
+            Debug.Log("Game over");
         }
         else
         {
             // Finished game
+            Debug.Log("You got them all!");
         }
     }
 }

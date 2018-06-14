@@ -6,19 +6,21 @@ using UnityEngine.UI;
 public class GameUI : MonoBehaviour {
     public Text score;
     public Text time;
+    public Button pauseButton;
+
 	// Use this for initialization
 	void Start () {
-		
+        pauseButton.onClick.AddListener(delegate { GameController.Instance.PauseGame(); });
 	}
 	
 	// Update is called once per frame
 	void Update () {
-        int timeLeft = GameController.Instance.TimeLeft();
+        int timeLeft = GameController.Instance.TimeLeft;
         int seconds = timeLeft % 60;
         int minutes = Mathf.FloorToInt(timeLeft / 60);
 
         time.text = string.Format("{0}:{1}", minutes.ToString("D2"), seconds.ToString("D2"));
 
-        score.text = GameController.Instance.Score().ToString("n0");
+        score.text = GameController.Instance.Score.ToString("n0");
 	}
 }
