@@ -45,7 +45,7 @@ public class StartScreenController : MonoBehaviour
             labelToEdit.text += startupText[i];
 
             audio.Play();
-            yield return new WaitForSeconds(textSpeed);
+            yield return new WaitForSeconds(0.05f);
         }
         isTextDone = true;
         labelForContinue.text = "Druk op een toets om door te gaan";
