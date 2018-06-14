@@ -15,7 +15,6 @@ public class ScoreBoardController : MonoBehaviour {
         //TODO: get top 10 rows	from api and deserialize
 
         Camera camera = Camera.main;
-        //float heightOneRow = transform.
         Canvas canvas = GetComponent<Canvas>();
         for (int i = 0; i < users.Length; i++)
         {
@@ -29,6 +28,9 @@ public class ScoreBoardController : MonoBehaviour {
 
     // Update is called once per frame
     void Update () {
-		
-	}
+        if (Input.GetKeyDown(KeyCode.Backspace))
+        {
+            StartCoroutine(GameController.Instance.BackToStart());
+        }
+    }
 }
