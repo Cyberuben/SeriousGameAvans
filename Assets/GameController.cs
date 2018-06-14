@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class GameController : Singleton<GameController> {
     public GameObject GameControllerSingle;
@@ -8,6 +9,7 @@ public class GameController : Singleton<GameController> {
     public Vector3 cameraPosition = Vector3.zero;
     public GameState gameState = GameState.MENU;
     public List<HouseState> houses;
+    public bool playAudio = true;
 
     public enum Difficulty
     {
@@ -119,6 +121,16 @@ public class GameController : Singleton<GameController> {
         }
 
         StartCoroutine(DecrementTimer());
+    }
+
+    public IEnumerator BackToStart()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Menu");
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
     }
 
     public void PauseGame()

@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class GameControllerConfig : MonoBehaviour {
     public List<GameObject> housePrefabs;
-	// Use this for initialization
-	void Start () {
+
+    // Use this for initialization
+    void Start () {
 		
 	}
 	

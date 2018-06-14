@@ -6,7 +6,6 @@ using UnityEngine.SceneManagement;
 public class Menu : MonoBehaviour
 {
     public List<GameObject> screens;
-
     public int _selectedScreen;
     private Vector3 _destination;
     private float _menuDistance;
@@ -47,6 +46,10 @@ public class Menu : MonoBehaviour
         {
             StartCoroutine(StartScoreBoard());
         }
+        else if (screens[screen].gameObject.name.Equals("Settings"))
+        {
+            StartCoroutine(StartSettings());
+        }
     }
 
     //Make this generic?
@@ -65,6 +68,16 @@ public class Menu : MonoBehaviour
     IEnumerator StartScoreBoard()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("ScoreBoard");
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    IEnumerator StartSettings()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Instellingen");
 
         while (!asyncLoad.isDone)
         {
