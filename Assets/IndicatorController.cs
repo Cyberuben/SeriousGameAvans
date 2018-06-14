@@ -30,6 +30,7 @@ public class IndicatorController : MonoBehaviour {
         {
             GameController.Instance.houses[houseIndex].indicatorFound = true;
             GameController.Instance.AddScore(100);
+            GameController.Instance.IndicatorsFound++;
         }
     }
 }
