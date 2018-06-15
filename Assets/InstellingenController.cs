@@ -14,7 +14,7 @@ public class InstellingenController : MonoBehaviour {
              ToggleValueChanged(musicOn);
          });
 
-        //musicOn.isOn = GameController.Instance.playAudio;
+        musicOn.isOn = GameController.Instance.playAudio;
     }
 
     void ToggleValueChanged(Toggle change)

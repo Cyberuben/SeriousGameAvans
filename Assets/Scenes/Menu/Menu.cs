@@ -50,6 +50,10 @@ public class Menu : MonoBehaviour
         {
             StartCoroutine(StartSettings());
         }
+        else if (screens[screen].gameObject.name.Equals("LearningCenter"))
+        {
+            StartCoroutine(StartLeercentrum());
+        }
     }
 
     //Make this generic?
@@ -78,6 +82,16 @@ public class Menu : MonoBehaviour
     IEnumerator StartSettings()
     {
         AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Instellingen");
+
+        while (!asyncLoad.isDone)
+        {
+            yield return null;
+        }
+    }
+
+    IEnumerator StartLeercentrum()
+    {
+        AsyncOperation asyncLoad = SceneManager.LoadSceneAsync("Leercentrum");
 
         while (!asyncLoad.isDone)
         {

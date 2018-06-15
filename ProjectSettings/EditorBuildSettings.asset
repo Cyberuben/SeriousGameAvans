@@ -17,4 +17,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Intro/IntroScene.unity
     guid: 25f3ebb6c661f7747b508f50507b7b68
+  - enabled: 1
+    path: Assets/Scenes/Instellingen/Instellingen.unity
+    guid: d5b58a45ca84d5745ae7bbac2aec90a4
+  - enabled: 1
+    path: Assets/Scenes/Leercentrum/Leercentrum.unity
+    guid: 6964a373064bb7d4f97b1af30a97b100
   m_configObjects: {}
