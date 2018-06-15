@@ -9,7 +9,7 @@ public class GameController : Singleton<GameController> {
     public Vector3 cameraPosition = Vector3.zero;
     public GameState gameState = GameState.MENU;
     public List<HouseState> houses;
-    public bool playAudio = true;
+    public bool playAudio = false;
 
     public enum Difficulty
     {
