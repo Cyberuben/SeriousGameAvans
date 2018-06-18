@@ -31,19 +31,19 @@ public class BuildingInside : MonoBehaviour {
             float floorWidth = floors[i].GetComponent<BoxCollider>().size.x;
 
             float scale = 1.0f;
-            if (floorWidth < width * 0.8f)
+            if (floorWidth > width * 0.8f)
             {
-                scale = (width * 0.8f) / floorWidth;
+                scale = ((width * 0.8f) / floorWidth);
             }
 
-            floors[i].transform.localScale.Scale(new Vector3(scale, scale, 1));
+            floors[i].transform.localScale = new Vector3(scale, scale, 1);
         }
 
         ChangeFloors(0);
 
         if (_index != -1)
         {
-            if (GameController.Instance.houses[_index].indicator != null)
+            if (GameController.Instance.houses != null && GameController.Instance.houses[_index].indicator != null)
             {
                 _controller.EnableIndicator(GameController.Instance.houses[_index].indicator);
             }

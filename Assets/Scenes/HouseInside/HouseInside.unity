@@ -595,6 +595,7 @@ MonoBehaviour:
   indicators:
   - name: ashtray
     reference: {fileID: 468262809}
+  snow: {fileID: 0}
 --- !u!1 &1637493852
 GameObject:
   m_ObjectHideFlags: 0

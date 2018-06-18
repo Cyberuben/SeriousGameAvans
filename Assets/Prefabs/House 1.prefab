@@ -1054,6 +1054,7 @@ MonoBehaviour:
     reference: {fileID: 1580636853548742}
   - name: ashtray
     reference: {fileID: 0}
+  snow: {fileID: 0}
 --- !u!114 &114853354247407520
 MonoBehaviour:
   m_ObjectHideFlags: 1

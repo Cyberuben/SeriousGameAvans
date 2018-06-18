@@ -5,6 +5,7 @@ using UnityEngine;
 public class IndicatorController : MonoBehaviour {
     public int houseIndex;
     public List<IndicatorEntry> indicators;
+    public GameObject snow;
 
     [System.Serializable]
     public class IndicatorEntry
@@ -19,7 +20,14 @@ public class IndicatorController : MonoBehaviour {
         {
             if (indicator.name.Equals(name) && indicator.reference != null)
             {
-                indicator.reference.gameObject.SetActive(true);
+                if (name.Equals("snow"))
+                {
+                    indicator.reference.GetComponent<Renderer>().enabled = false;
+                }
+                else
+                {
+                    indicator.reference.gameObject.SetActive(true);
+                }
             }
         }
     }
