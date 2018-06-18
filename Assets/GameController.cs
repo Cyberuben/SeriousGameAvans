@@ -10,6 +10,7 @@ public class GameController : Singleton<GameController> {
     public GameState gameState = GameState.MENU;
     public List<HouseState> houses;
     public bool playAudio = false;
+    public int enteredHouse;
 
     public enum Difficulty
     {
@@ -97,6 +98,8 @@ public class GameController : Singleton<GameController> {
                 indicatorsGenerated++;
             }
         }
+
+        enteredHouse = -1;
 
         gameState = GameState.PLAYING;
 

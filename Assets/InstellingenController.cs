@@ -6,6 +6,8 @@ using UnityEngine.UI;
 
 public class InstellingenController : MonoBehaviour {
     public Toggle musicOn;
+    public Button[] difficultyButtons;
+    public GameObject[] CheckedImages;
 
 	// Use this for initialization
 	void Start ()
@@ -15,6 +17,42 @@ public class InstellingenController : MonoBehaviour {
          });
 
         musicOn.isOn = GameController.Instance.playAudio;
+
+        DisableAllBtnsBesides(GameController.Instance.difficulty.ToString());
+    }
+
+    private void DisableAllBtnsBesides(string btnName)
+    {
+        for (int i = 0; i < CheckedImages.Length; i++)
+        {
+            if (!CheckedImages[i].name.ToLower().Contains(btnName.ToLower()))
+            {
+                CheckedImages[i].SetActive(false);
+            }
+            else
+            {
+                CheckedImages[i].SetActive(true);
+            }
+        }
+    }
+
+    public void EasyButtonPressed()
+    {
+        GameController.Instance.difficulty = GameController.Difficulty.EASY;
+        DisableAllBtnsBesides("easy");
+    }
+
+    public void MediumButtonPressed()
+    {
+        GameController.Instance.difficulty = GameController.Difficulty.MEDIUM;
+        DisableAllBtnsBesides("medium");
+    }
+
+    public void HardButtonPressed()
+    {
+        GameController.Instance.difficulty = GameController.Difficulty.HARD;
+        DisableAllBtnsBesides("hard");
+
     }
 
     void ToggleValueChanged(Toggle change)

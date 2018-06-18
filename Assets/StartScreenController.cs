@@ -35,7 +35,7 @@ public class StartScreenController : MonoBehaviour
         isSecondTextDone = false;
         audio = GetComponent<AudioSource>();
         StartCoroutine(DrawText());
-        textSpeed = 0.001f;
+        textSpeed = 0.05f;
     }
 
     IEnumerator DrawText()

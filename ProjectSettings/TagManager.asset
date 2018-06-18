@@ -6,6 +6,10 @@ TagManager:
   tags:
   - GameControllerConfig
   - Music
+  - EasyBtn
+  - MediumBtn
+  - HardBtn
+  - CheckedImg
   layers:
   - Default
   - TransparentFX
