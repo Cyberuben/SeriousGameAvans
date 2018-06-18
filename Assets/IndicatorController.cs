@@ -5,7 +5,6 @@ using UnityEngine;
 public class IndicatorController : MonoBehaviour {
     public int houseIndex;
     public List<IndicatorEntry> indicators;
-    public GameObject snow;
 
     [System.Serializable]
     public class IndicatorEntry
@@ -34,11 +33,6 @@ public class IndicatorController : MonoBehaviour {
 	
 	public void Found(string name)
     {
-        if (!GameController.Instance.houses[houseIndex].indicatorFound)
-        {
-            GameController.Instance.houses[houseIndex].indicatorFound = true;
-            GameController.Instance.AddScore(100);
-            GameController.Instance.IndicatorsFound++;
-        }
+        GameController.Instance.FoundIndicator(houseIndex);
     }
 }

@@ -37,6 +37,7 @@ GameObject:
   - component: {fileID: 4570828463813952}
   - component: {fileID: 212142934917765028}
   - component: {fileID: 114612607077686346}
+  - component: {fileID: 65716380551814322}
   m_Layer: 0
   m_Name: Chemicals
   m_TagString: Untagged
@@ -271,6 +272,7 @@ GameObject:
   - component: {fileID: 4153201065894766}
   - component: {fileID: 212787794722533080}
   - component: {fileID: 114467663773060046}
+  - component: {fileID: 65565482852284070}
   m_Layer: 0
   m_Name: WindowBrownTaped
   m_TagString: Untagged
@@ -321,6 +323,8 @@ GameObject:
   m_Component:
   - component: {fileID: 4916797867621210}
   - component: {fileID: 212734061173369996}
+  - component: {fileID: 114966365712018462}
+  - component: {fileID: 65224779098422048}
   m_Layer: 0
   m_Name: Door
   m_TagString: Untagged
@@ -348,7 +352,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1899571476170354}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1, y: 1.5, z: 0}
+  m_LocalPosition: {x: 1, y: 1.5, z: -1}
   m_LocalScale: {x: 0.29553, y: 0.27394, z: 0.27394}
   m_Children: []
   m_Father: {fileID: 4588830158277764}
@@ -374,7 +378,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1174489896494742}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.98, y: 2.14, z: 0}
+  m_LocalPosition: {x: 1.98, y: 2.14, z: -1}
   m_LocalScale: {x: 0.5, y: 0.5, z: 1}
   m_Children: []
   m_Father: {fileID: 4588830158277764}
@@ -452,7 +456,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1914731200050004}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 1.75, y: 2.69, z: 5}
+  m_LocalPosition: {x: 1.75, y: 2.69, z: -2}
   m_LocalScale: {x: 0.08, y: 0.08, z: 5}
   m_Children: []
   m_Father: {fileID: 4588830158277764}
@@ -478,7 +482,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1022095481349708}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.41, y: 0.47, z: 0}
+  m_LocalPosition: {x: -2.41, y: 0.47, z: -1}
   m_LocalScale: {x: 0.28928, y: 0.28928, z: 0.28928}
   m_Children: []
   m_Father: {fileID: 4588830158277764}
@@ -532,7 +536,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1368111633838462}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.3, y: 0.59, z: 0}
+  m_LocalPosition: {x: 0.3, y: 0.59, z: -1}
   m_LocalScale: {x: 0.29999998, y: 0.29999998, z: 1}
   m_Children: []
   m_Father: {fileID: 4588830158277764}
@@ -571,7 +575,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1948960830421000}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1, y: 1.24, z: 0}
+  m_LocalPosition: {x: -1, y: 1.24, z: -1}
   m_LocalScale: {x: 1.1399415, y: 1.9310409, z: 0.9353747}
   m_Children:
   - {fileID: 4548383944471418}
@@ -604,6 +608,18 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 2.6999998, y: 3.8899999, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65224779098422048
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948960830421000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.5, y: 1.4, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65361407579714616
 BoxCollider:
@@ -641,6 +657,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 2.6999998, y: 3.8899999, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65565482852284070
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1899571476170354}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4599998, y: 4.38, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65575452739472208
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -652,6 +680,18 @@ BoxCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Size: {x: 9.6, y: 6.77, z: 0.2}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!65 &65716380551814322
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1022095481349708}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 2.1399999, y: 3.5799997, z: 0.19999999}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!65 &65830258167357192
 BoxCollider:
@@ -713,9 +753,9 @@ MonoBehaviour:
   - name: mailbox
     reference: {fileID: 1368111633838462}
   - name: chemicals
-    reference: {fileID: 1899571476170354}
+    reference: {fileID: 1022095481349708}
   - name: windowBrownTaped
-    reference: {fileID: 0}
+    reference: {fileID: 1899571476170354}
   - name: snow
     reference: {fileID: 1049667809301788}
 --- !u!114 &114572831327126736
@@ -783,6 +823,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: crack
   house: {fileID: 1334818206303756}
+--- !u!114 &114966365712018462
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1948960830421000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd57df3abe5adc4684bf98804208db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 114469333128658038}
+  scene: HouseInside
 --- !u!212 &212002514536301006
 SpriteRenderer:
   m_ObjectHideFlags: 1
