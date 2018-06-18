@@ -1050,10 +1050,11 @@ MonoBehaviour:
     reference: {fileID: 1192384195658058}
   - name: EmptyMailbox
     reference: {fileID: 1588702615532498}
-  - name: Snow
+  - name: snow
     reference: {fileID: 1580636853548742}
   - name: ashtray
     reference: {fileID: 0}
+  snow: {fileID: 0}
 --- !u!114 &114853354247407520
 MonoBehaviour:
   m_ObjectHideFlags: 1
