@@ -19,18 +19,20 @@ public class IndicatorController : MonoBehaviour {
         {
             if (indicator.name.Equals(name) && indicator.reference != null)
             {
-                indicator.reference.gameObject.SetActive(true);
+                if (name.Equals("snow"))
+                {
+                    indicator.reference.GetComponent<Renderer>().enabled = false;
+                }
+                else
+                {
+                    indicator.reference.gameObject.SetActive(true);
+                }
             }
         }
     }
 	
 	public void Found(string name)
     {
-        if (!GameController.Instance.houses[houseIndex].indicatorFound)
-        {
-            GameController.Instance.houses[houseIndex].indicatorFound = true;
-            GameController.Instance.AddScore(100);
-            GameController.Instance.IndicatorsFound++;
-        }
+        GameController.Instance.FoundIndicator(houseIndex);
     }
 }

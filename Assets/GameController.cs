@@ -150,6 +150,8 @@ public class GameController : Singleton<GameController> {
 
     public void EndGame()
     {
+        gameState = GameState.ENDED;
+
         if (TimeLeft > 0)
         {
             Score += TimeLeft * 10;
@@ -164,6 +166,21 @@ public class GameController : Singleton<GameController> {
         {
             // Finished game
             Debug.Log("You got them all!");
+        }
+    }
+
+    public void FoundIndicator(int houseIndex)
+    {
+        if (!houses[houseIndex].indicatorFound)
+        {
+            houses[houseIndex].indicatorFound = true;
+            AddScore(100);
+            IndicatorsFound++;
+
+            if (IndicatorsFound == IndicatorsTotal)
+            {
+                EndGame();
+            }
         }
     }
 }

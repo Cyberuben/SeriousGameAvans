@@ -497,7 +497,7 @@ GameObject:
   - component: {fileID: 65515885122710696}
   - component: {fileID: 114354225204567120}
   m_Layer: 0
-  m_Name: EmptyMailBox
+  m_Name: emptyMailbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1344,7 +1344,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Emptymailbox
+  name: emptyMailbox
   house: {fileID: 1922109323224262}
 --- !u!114 &114447907402473068
 MonoBehaviour:
@@ -1357,7 +1357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: WindowBrownTaped
+  name: windowBrownTaped
   house: {fileID: 1922109323224262}
 --- !u!114 &114473636950666714
 MonoBehaviour:
@@ -1396,7 +1396,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: Chemicals
+  name: chemicals
   house: {fileID: 1922109323224262}
 --- !u!114 &114962249703478846
 MonoBehaviour:
@@ -1415,7 +1415,7 @@ MonoBehaviour:
     reference: {fileID: 1775436104425638}
   - name: camera
     reference: {fileID: 1657736090601156}
-  - name: emptyMailBox
+  - name: emptyMailbox
     reference: {fileID: 1730602748572662}
   - name: mailbox
     reference: {fileID: 1631762397599416}

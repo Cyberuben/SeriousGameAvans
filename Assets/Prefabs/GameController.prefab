@@ -52,8 +52,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   housePrefabs:
-  - {fileID: 1871635581948654, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
-  - {fileID: 1567339458323280, guid: 73772090a5bceaa4b93c0e8bb292cf73, type: 2}
   - {fileID: 1443782179754364, guid: 389ac5e48e5823c40ba361f5077fda0d, type: 2}
   - {fileID: 1924457432436482, guid: a7548c1a02fa41d45bd8ff4f2ab7dcfa, type: 2}
   - {fileID: 1334818206303756, guid: 55ccca4d12011b84382e673e5beb4b46, type: 2}
