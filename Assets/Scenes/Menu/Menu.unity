@@ -497,11 +497,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.size
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 4602808863718366, guid: 2b103cd73d6ea3c45a8c1b21813dece4, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -534,42 +529,6 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.data[1]
-      value: 
-      objectReference: {fileID: 1567339458323280, guid: 73772090a5bceaa4b93c0e8bb292cf73,
-        type: 2}
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.data[2]
-      value: 
-      objectReference: {fileID: 1443782179754364, guid: 389ac5e48e5823c40ba361f5077fda0d,
-        type: 2}
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.data[3]
-      value: 
-      objectReference: {fileID: 1924457432436482, guid: a7548c1a02fa41d45bd8ff4f2ab7dcfa,
-        type: 2}
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.data[4]
-      value: 
-      objectReference: {fileID: 1334818206303756, guid: 55ccca4d12011b84382e673e5beb4b46,
-        type: 2}
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.data[5]
-      value: 
-      objectReference: {fileID: 1922109323224262, guid: 0f2c3721c524f6548a14ccfad487741b,
-        type: 2}
-    - target: {fileID: 114930224469702114, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
-        type: 2}
-      propertyPath: housePrefabs.Array.data[0]
-      value: 
-      objectReference: {fileID: 1443782179754364, guid: 389ac5e48e5823c40ba361f5077fda0d,
-        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2b103cd73d6ea3c45a8c1b21813dece4, type: 2}
   m_IsPrefabParent: 0
