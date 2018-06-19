@@ -159,7 +159,7 @@ GameObject:
   - component: {fileID: 65761661462121230}
   - component: {fileID: 212461647923962780}
   m_Layer: 0
-  m_Name: SnowAutoGarage
+  m_Name: SnowBig
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
