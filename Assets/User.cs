@@ -1,17 +1,30 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class User : MonoBehaviour {
+[Serializable]
+public class User
+{
+    public string UserName;
+    public int HighScore;
+    public string Department;
+    public string _id;
 
-    public string UserName { get; set; }
-    public int HighScore { get; set; }
-
-    public User(string userName, int highScore)
+    public User(string userName, int highScore, string department)
     {
         UserName = userName;
         HighScore = highScore;
+        Department = department;
     }
 
     public User() { }
+
+    public User(string userName, int highScore, string department, string _id)
+    {
+        UserName = userName;
+        HighScore = highScore;
+        Department = department;
+        this._id = _id;
+    }
 }

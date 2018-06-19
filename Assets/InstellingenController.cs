@@ -8,9 +8,10 @@ public class InstellingenController : MonoBehaviour {
     public Toggle musicOn;
     public Button[] difficultyButtons;
     public GameObject[] CheckedImages;
+    public bool isEasterEggActivated = false;
 
-	// Use this for initialization
-	void Start ()
+    // Use this for initialization
+    void Start ()
     {
         musicOn.onValueChanged.AddListener(delegate {
              ToggleValueChanged(musicOn);
@@ -57,17 +58,20 @@ public class InstellingenController : MonoBehaviour {
 
     void ToggleValueChanged(Toggle change)
     {
-        if (musicOn.isOn)
+        if (isEasterEggActivated)
         {
-            GameController.Instance.playAudio = true;
-            GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>().Play();
+            if (musicOn.isOn)
+            {
+                GameController.Instance.playAudio = true;
+                GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>().Play();
+            }
+            else
+            {
+                GameController.Instance.playAudio = false;
+                GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>().Stop();
+            }
         }
-        else
-        {
-            GameController.Instance.playAudio = false;
-            GameObject.FindGameObjectWithTag("Music").GetComponent<AudioSource>().Stop();
-        }
-    }
+    }      
 
     // Update is called once per frame
     void Update()
@@ -76,5 +80,18 @@ public class InstellingenController : MonoBehaviour {
         {
             StartCoroutine(GameController.Instance.BackToStart());
         }
+
+        if (GetAnyKey(KeyCode.P, KeyCode.A, KeyCode.M))
+        {
+            isEasterEggActivated = true;
+        }
+    }
+
+    private bool GetAnyKey(params KeyCode[] aKeys)
+    {
+        foreach (var key in aKeys)
+            if (Input.GetKey(key))
+                return true;
+        return false;
     }
 }
