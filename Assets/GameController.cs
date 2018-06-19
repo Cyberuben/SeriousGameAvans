@@ -169,7 +169,7 @@ public class GameController : Singleton<GameController> {
         }
     }
 
-    public void FoundIndicator(int houseIndex)
+    public bool FoundIndicator(int houseIndex)
     {
         if (!houses[houseIndex].indicatorFound)
         {
@@ -181,6 +181,10 @@ public class GameController : Singleton<GameController> {
             {
                 EndGame();
             }
+
+            return true;
         }
+
+        return false;
     }
 }

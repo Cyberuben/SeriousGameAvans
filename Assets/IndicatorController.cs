@@ -22,6 +22,7 @@ public class IndicatorController : MonoBehaviour {
                 if (name.Equals("snow"))
                 {
                     indicator.reference.GetComponent<Renderer>().enabled = false;
+                    indicator.reference.GetComponent<BoxCollider>().enabled = true;
                 }
                 else
                 {
@@ -33,6 +34,10 @@ public class IndicatorController : MonoBehaviour {
 	
 	public void Found(string name)
     {
-        GameController.Instance.FoundIndicator(houseIndex);
+        if (GameController.Instance.FoundIndicator(houseIndex))
+        {
+            GameUI ui = GameObject.FindObjectOfType<GameUI>();
+            ui.ShowIndicatorInfo(name);
+        }
     }
 }

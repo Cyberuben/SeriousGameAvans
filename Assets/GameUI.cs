@@ -14,6 +14,22 @@ public class GameUI : MonoBehaviour {
     public Text gameOverHeader;
     public Text gameOverText;
 
+    public GameObject indicatorInfo;
+    public Text indicatorTitle;
+    public Text indicatorDescription;
+    public Image indicatorImage;
+
+    public List<IndicatorInfo> indicatorDefinitions;
+
+    [System.Serializable]
+    public class IndicatorInfo
+    {
+        public string key;
+        public string title;
+        public string description;
+        public Sprite image; 
+    }
+
     private bool _scoreSubmitted = false;
 
     public void PauseGame()
@@ -71,4 +87,29 @@ public class GameUI : MonoBehaviour {
             gameOverMenu.SetActive(true);
         }
 	}
+
+    public void ShowIndicatorInfo(string name)
+    {
+        indicatorTitle.text = "Onbekend";
+        indicatorDescription.text = "Onbekend";
+        indicatorImage.sprite = null;
+
+        for (int i = 0; i < indicatorDefinitions.Count; i++) {
+            if (indicatorDefinitions[i].key.Equals(name))
+            {
+                indicatorTitle.text = indicatorDefinitions[i].title;
+                indicatorDescription.text = indicatorDefinitions[i].description;
+                indicatorImage.sprite = indicatorDefinitions[i].image;
+                indicatorImage.preserveAspect = true;
+                break;
+            }
+        }
+
+        indicatorInfo.SetActive(true);
+    }
+
+    public void HideIndicatorInfo()
+    {
+        indicatorInfo.SetActive(false);
+    }
 }

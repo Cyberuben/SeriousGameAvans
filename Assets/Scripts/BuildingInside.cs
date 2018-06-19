@@ -48,21 +48,15 @@ public class BuildingInside : MonoBehaviour {
                 _controller.EnableIndicator(GameController.Instance.houses[_index].indicator);
             }
         }
-
-        up.onClick.AddListener(delegate { ChangeFloors(-1); });
-        down.onClick.AddListener(delegate { ChangeFloors(1); });
-        back.onClick.AddListener(delegate {
-            GameController.Instance.enteredHouse = -1;
-            SceneManager.LoadScene("Street");
-        });
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
 	}
 
-    void ChangeFloors(int direction)
+    public void Leave()
+    {
+        GameController.Instance.enteredHouse = -1;
+        SceneManager.LoadScene("Street");
+    }
+
+    public void ChangeFloors(int direction)
     {
         currentFloor += direction;
         if (currentFloor < 0)
