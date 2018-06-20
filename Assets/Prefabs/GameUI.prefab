@@ -1588,6 +1588,10 @@ MonoBehaviour:
       Het vinden van jerrycans waar geen sticker op zit kan dus wijzen op de aanwezigheid
       van een drugslab.
     image: {fileID: 21300000, guid: 494abc77a37ef344ca10ecdd125bea03, type: 3}
+  - key: car
+    title: Geen auto's?
+    description: Een autogarage zonder auto's? Dit is verdacht.
+    image: {fileID: 21300000, guid: 9db0a238de612e44eb346a3513a58b71, type: 3}
 --- !u!114 &114534359686886770
 MonoBehaviour:
   m_ObjectHideFlags: 1
