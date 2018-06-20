@@ -463,7 +463,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 6.882, y: 0.1820001}
+  m_AnchoredPosition: {x: 6.95, y: 0.25}
   m_SizeDelta: {x: 134.448, y: 49.611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &132651154
@@ -498,7 +498,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Warme muren\n of daken?"
+  m_Text: 'Warme muren
+
+    of daken?'
 --- !u!222 &132651155
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1843,7 +1845,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 6.8859997, y: -1.162}
+  m_AnchoredPosition: {x: 6.882, y: -1.34}
   m_SizeDelta: {x: 130.149, y: 45.292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &742841413
@@ -1991,7 +1993,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.358, y: 2}
+  m_AnchoredPosition: {x: -6.358, y: 2.12}
   m_SizeDelta: {x: 111.732, y: 43.7}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &892938242
@@ -2026,9 +2028,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Er hangt een vreemde
-
-    Lucht rond het huis.'
+  m_Text: Er hangt een vreemde lucht rond het huis.
 --- !u!222 &892938243
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -2189,80 +2189,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!1 &1018360016
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1018360017}
-  - component: {fileID: 1018360018}
-  m_Layer: 0
-  m_Name: Trahscanedit
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1018360017
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1018360016}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.149, y: -0.917, z: 36.75}
-  m_LocalScale: {x: 0.27576938, y: 0.22850652, z: 9.140261}
-  m_Children: []
-  m_Father: {fileID: 1735693825}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!212 &1018360018
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1018360016}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 2
-  m_Sprite: {fileID: 21300000, guid: 015acf8e63e75b247afcd976d6e3f999, type: 3}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 8, y: 6}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
 --- !u!1 &1083438412
 GameObject:
   m_ObjectHideFlags: 0
@@ -2390,7 +2316,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "je merk op dat er \nscheuren in een muur zitten."
+  m_Text: "Je merkt op dat er \nscheuren in een muur zitten."
 --- !u!222 &1118329805
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3067,9 +2993,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Klikt op de indicator waar u meer
+  m_Text: 'Klik op de indicator waar u meer
 
-    over wil weten...'
+    over wilt weten...'
 --- !u!222 &1510723198
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3099,7 +3025,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1564800460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -1.9973, y: -1.049, z: 36.8}
+  m_LocalPosition: {x: -1.88, y: -0.96, z: 36.8}
   m_LocalScale: {x: 0.3541699, y: 0.29347035, z: 11.738812}
   m_Children: []
   m_Father: {fileID: 591457732}
@@ -3182,7 +3108,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 7.341, y: 1.8510001}
+  m_AnchoredPosition: {x: 7.45, y: 1.8510001}
   m_SizeDelta: {x: 134.448, y: 49.611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1565449680
@@ -3258,7 +3184,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.3580003, y: -2.961}
+  m_AnchoredPosition: {x: -6.358, y: -2.857}
   m_SizeDelta: {x: 130.149, y: 45.292}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1614080635
@@ -3543,7 +3469,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: -6.254, y: -1.336}
+  m_AnchoredPosition: {x: -6.17, y: -1.25}
   m_SizeDelta: {x: 134.448, y: 49.611}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1659686859
@@ -3578,13 +3504,87 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "je merk op dat \niemand een te volle\nbrievenbus heeft."
+  m_Text: "Je merkt op dat \niemand een te volle\nbrievenbus heeft."
 --- !u!222 &1659686860
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1659686857}
+--- !u!1 &1677556672
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1677556674}
+  - component: {fileID: 1677556673}
+  m_Layer: 0
+  m_Name: hangslot
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!212 &1677556673
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677556672}
+  m_Enabled: 1
+  m_CastShadows: 0
+  m_ReceiveShadows: 0
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
+  m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
+  m_ScaleInLightmap: 1
+  m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
+  m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
+  m_MinimumChartSize: 4
+  m_AutoUVMaxDistance: 0.5
+  m_AutoUVMaxAngle: 89
+  m_LightmapParameters: {fileID: 0}
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 2
+  m_Sprite: {fileID: 21300000, guid: 0ea7ceff1819ff447bb79bb50e50d3ba, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_FlipX: 0
+  m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1.01, y: 1.09}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
+--- !u!4 &1677556674
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1677556672}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.1252034, y: -0.8678337, z: -171.49995}
+  m_LocalScale: {x: 0.93787986, y: 0.77714086, z: 31.085642}
+  m_Children: []
+  m_Father: {fileID: 1735693825}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692096824
 GameObject:
   m_ObjectHideFlags: 0
@@ -3748,7 +3748,7 @@ GameObject:
   - component: {fileID: 1735693824}
   - component: {fileID: 1735693823}
   m_Layer: 0
-  m_Name: AchievementButtonVuilnis
+  m_Name: AchievementButtonHangslot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3792,7 +3792,7 @@ Transform:
   m_Children:
   - {fileID: 210328824}
   - {fileID: 460451830}
-  - {fileID: 1018360017}
+  - {fileID: 1677556674}
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -3985,7 +3985,7 @@ GameObject:
   - component: {fileID: 1859030538}
   - component: {fileID: 1859030537}
   m_Layer: 5
-  m_Name: IndicatorTextVuilnis
+  m_Name: IndicatorTextHangslot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4006,8 +4006,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 6.8859997, y: -2.961}
-  m_SizeDelta: {x: 130.149, y: 45.292}
+  m_AnchoredPosition: {x: 6.684, y: -2.834}
+  m_SizeDelta: {x: 113.97, y: 43.27}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1859030537
 MonoBehaviour:
@@ -4041,7 +4041,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: "Geen vuilnisbakken \naan de straat?"
+  m_Text: Hangt er een hangslot aan de deur?
 --- !u!222 &1859030538
 CanvasRenderer:
   m_ObjectHideFlags: 0
