@@ -220,6 +220,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.size
+      value: 8
+      objectReference: {fileID: 0}
     - target: {fileID: 4863010098841420, guid: 703cf10523c4810409ec65397448dbe0, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -252,6 +257,164 @@ Prefab:
       propertyPath: m_RootOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[1].key
+      value: chemicals
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[1].title
+      value: Chemicalien
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[1].description
+      value: "Iedereen heeft thuis wel azijn staan, chemicali\xEBn als mierenzuur
+        zijn echter wat zeldzamer om in huis te hebben liggen. Ook spullen als vaten
+        en kolven worden in een standaard huishouden niet vaak gebruikt."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[1].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 02c246335d281fe459230c33a3a169e8,
+        type: 3}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[2].key
+      value: hangslot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[2].title
+      value: Hangslot
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[2].description
+      value: Waarom zit er een hangslot op deze deur? Wat wordt er achter deze deur
+        verborgen gehouden?
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[2].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 0ea7ceff1819ff447bb79bb50e50d3ba,
+        type: 3}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[3].key
+      value: hennepgeur
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[3].title
+      value: Hennepgeur
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[3].description
+      value: "Anijsgeur? Bij de productie van synthetische drugs worden chemicali\xEBn
+        gebruikt.Door deze chemicali\xEBn ruikt een drugslab sterk naar anijs."
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[3].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 1e3c096398d66f14586962ac05a10efb,
+        type: 3}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[4].key
+      value: camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[4].title
+      value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[4].description
+      value: Deze bewoners houden een oogje in het zeil. Verwachten ze ongewenst bezoek?
+        Dit kan duiden op illegale praktijken.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[4].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 6eb550693761b9c45a8535cc333cbee1,
+        type: 3}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[5].key
+      value: crack
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[5].title
+      value: Scheuren in de muur
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[5].description
+      value: Scheuren in de muur kunnen duiden op valse ruimtes. Afwijkingen in bouwtekeningen
+        kunnen wijzen op valse ruimtes die gebruikt worden voor andere doeleinden
+        dan wonen of werken. Let er goed op of de afmetingen op de tekening overeenkomen
+        met de werkelijkheid.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[5].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 54271015f3c241045b2f494de3264e54,
+        type: 3}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[6].key
+      value: snow
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[6].title
+      value: Geen sneeuw op het dak
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[6].description
+      value: Zijn de bewoners extreme koukleumen? Wellicht, maar het kan ook dat de
+        warmte die nodig is voor een hennepkwekerij op zolder de sneeuw snel doet
+        smelten.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[6].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 68850885d10595c4d9310b3524d3b778,
+        type: 3}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[7].key
+      value: window_brown_taped
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[7].title
+      value: Afgetapte ramen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[7].description
+      value: Als je niks te verbergen hebt, wil je natuurlijk veel liever het zonnetje
+        door de ramen zien schijnen. Dit kan verdacht zijn.
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[7].image
+      value: 
+      objectReference: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e,
+        type: 3}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 703cf10523c4810409ec65397448dbe0, type: 2}
   m_IsPrefabParent: 0
