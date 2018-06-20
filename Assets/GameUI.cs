@@ -11,6 +11,7 @@ public class GameUI : MonoBehaviour {
     public GameObject pauseMenu;
     public GameObject gameOverMenu;
     public InputField highscoreName;
+    public InputField highscoreDepartment;
     public Text gameOverHeader;
     public Text gameOverText;
 
@@ -55,10 +56,25 @@ public class GameUI : MonoBehaviour {
 
     public void SubmitHighscore()
     {
-        Debug.Log(GameController.Instance.Score);
-        Debug.Log(GameController.Instance.difficulty);
-        Debug.Log(GameController.Instance.TimeLeft);
-        Debug.Log(highscoreName.text);
+        if (!_scoreSubmitted)
+        {
+            StartCoroutine(PostHighscore());
+        }
+    }
+
+    private IEnumerator PostHighscore()
+    {
+        string urlToApi = "https://seriousgame.rsrv.pw/api/users";
+        Dictionary<string, string> headers = new Dictionary<string, string>();
+        headers.Add("Content-Type", "application/json");
+        User usr = new User(highscoreName.text, GameController.Instance.Score, highscoreDepartment.text);
+        string json = JsonUtility.ToJson(usr);
+        byte[] arr = System.Text.Encoding.UTF8.GetBytes(json);
+
+        using (WWW www = new WWW(urlToApi, arr, headers))
+        {
+            yield return www;
+        }
     }
 
     // Update is called once per frame
