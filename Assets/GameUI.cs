@@ -19,6 +19,8 @@ public class GameUI : MonoBehaviour {
     public Text indicatorDescription;
     public Image indicatorImage;
 
+    public GameObject helpPopup;
+
     public List<IndicatorInfo> indicatorDefinitions;
 
     [System.Serializable]
@@ -58,9 +60,18 @@ public class GameUI : MonoBehaviour {
         Debug.Log(GameController.Instance.TimeLeft);
         Debug.Log(highscoreName.text);
     }
-	
-	// Update is called once per frame
-	void Update () {
+
+    private void Start()
+    {
+        if (!GameController.Instance.helpShown)
+        {
+            GameController.Instance.helpShown = true;
+            ToggleHelp(true);
+        }
+    }
+
+    // Update is called once per frame
+    void Update () {
         int timeLeft = GameController.Instance.TimeLeft;
         int seconds = timeLeft % 60;
         int minutes = Mathf.FloorToInt(timeLeft / 60);
@@ -113,5 +124,19 @@ public class GameUI : MonoBehaviour {
     {
         GameController.Instance.ResumeGame();
         indicatorInfo.SetActive(false);
+    }
+
+    public void ToggleHelp(bool enabled)
+    {
+        if (enabled)
+        {
+            GameController.Instance.PauseGame();
+        }
+        else
+        {
+            GameController.Instance.ResumeGame();
+        }
+
+        helpPopup.SetActive(enabled);
     }
 }
