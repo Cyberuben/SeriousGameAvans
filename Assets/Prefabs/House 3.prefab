@@ -761,7 +761,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1924457432436482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -17.834902, y: 1.7563736, z: 0}
+  m_LocalPosition: {x: 6.6715813, y: -7.853798, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4441541408382216}
@@ -1253,7 +1253,7 @@ MonoBehaviour:
     reference: {fileID: 1708734461259332}
   - name: chemicals
     reference: {fileID: 1713840953443702}
-  - name: windowBrownTaped
+  - name: window
     reference: {fileID: 1813175817856884}
   - name: snow
     reference: {fileID: 1682327612454970}
@@ -1263,7 +1263,7 @@ MonoBehaviour:
     reference: {fileID: 0}
   - name: ashtray
     reference: {fileID: 0}
-  - name: windowBrownTaped
+  - name: window
     reference: {fileID: 0}
   - name: jerrycan
     reference: {fileID: 0}
@@ -1345,7 +1345,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: windowBrownTaped
+  name: window
   house: {fileID: 1924457432436482}
 --- !u!114 &114959489098087882
 MonoBehaviour:

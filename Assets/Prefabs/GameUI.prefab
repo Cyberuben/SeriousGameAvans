@@ -1577,15 +1577,17 @@ MonoBehaviour:
       zonnetje door de ramen zien schijnen. Dit kan verdacht zijn.
     image: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e, type: 3}
   - key: sign
-    title: Afgeplakte ramen
-    description: Als je niks te verbergen hebt, wil je natuurlijk veel liever het
-      zonnetje door de ramen zien schijnen. Dit kan verdacht zijn.
-    image: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e, type: 3}
+    title: Naam bedrijf
+    description: Als bedrijf wil je natuurlijk dat klanten je makkelijk kunnen vinden,
+      anders loop je inkomsten mis. Of het moet zo zijn dat je inkomsten niet van
+      deze klanten af komen.
+    image: {fileID: 21300000, guid: fb4f3c1a1a01a884dae33e0fc19c2a24, type: 3}
   - key: jerrycan
-    title: Afgeplakte ramen
-    description: Als je niks te verbergen hebt, wil je natuurlijk veel liever het
-      zonnetje door de ramen zien schijnen. Dit kan verdacht zijn.
-    image: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e, type: 3}
+    title: Jerrycans
+    description: In opgerolde drugslabs worden vaak jerrycans zonder labels gevonden.
+      Het vinden van jerrycans waar geen sticker op zit kan dus wijzen op de aanwezigheid
+      van een drugslab.
+    image: {fileID: 21300000, guid: 494abc77a37ef344ca10ecdd125bea03, type: 3}
 --- !u!114 &114534359686886770
 MonoBehaviour:
   m_ObjectHideFlags: 1
