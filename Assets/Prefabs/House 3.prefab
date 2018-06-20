@@ -428,15 +428,13 @@ GameObject:
   m_Component:
   - component: {fileID: 4379571032901062}
   - component: {fileID: 212940367716044992}
-  - component: {fileID: 65693373088683924}
-  - component: {fileID: 114434390543308380}
   m_Layer: 0
   m_Name: EmptyMailbox
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1713840953443702
 GameObject:
   m_ObjectHideFlags: 0
@@ -763,7 +761,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1924457432436482}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.6972175, y: 0.06580186, z: 0}
+  m_LocalPosition: {x: 0.30988026, y: -2.7663898, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4441541408382216}
@@ -795,7 +793,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1614742483241662}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 6.75, z: -1}
+  m_LocalPosition: {x: 2, y: 6.75, z: 0}
   m_LocalScale: {x: 6.94, y: 3, z: 3}
   m_Children: []
   m_Father: {fileID: 4253603605512668}
@@ -808,7 +806,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1710944311203832}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.89, y: 0.59, z: -2}
+  m_LocalPosition: {x: 0.89, y: 0.59, z: -1}
   m_LocalScale: {x: 0.3, y: 0.3, z: -2}
   m_Children: []
   m_Father: {fileID: 4253603605512668}
@@ -1078,7 +1076,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1017513618412476}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2, y: 3, z: -1}
+  m_LocalPosition: {x: 2, y: 3, z: 0}
   m_LocalScale: {x: 6, y: 6, z: 1}
   m_Children: []
   m_Father: {fileID: 4253603605512668}
@@ -1234,18 +1232,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.46, y: 4.3800006, z: 0.20000003}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!65 &65693373088683924
-BoxCollider:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710944311203832}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 2.6999998, y: 3.8899999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &114034440911744292
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1263,8 +1249,6 @@ MonoBehaviour:
     reference: {fileID: 1958363577886266}
   - name: crack
     reference: {fileID: 1472747739787040}
-  - name: emptyMailbox
-    reference: {fileID: 1710944311203832}
   - name: mailbox
     reference: {fileID: 1708734461259332}
   - name: chemicals
@@ -1311,19 +1295,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: crack
-  house: {fileID: 1924457432436482}
---- !u!114 &114434390543308380
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1710944311203832}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: emptyMailbox
   house: {fileID: 1924457432436482}
 --- !u!114 &114553326478476258
 MonoBehaviour:

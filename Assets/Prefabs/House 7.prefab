@@ -329,6 +329,7 @@ GameObject:
   - component: {fileID: 4920243460583498}
   - component: {fileID: 212321428473433226}
   - component: {fileID: 114856982902299262}
+  - component: {fileID: 65267788436260848}
   m_Layer: 0
   m_Name: Chemicals
   m_TagString: Untagged
@@ -346,6 +347,7 @@ GameObject:
   - component: {fileID: 4382819693776046}
   - component: {fileID: 212119022999742720}
   - component: {fileID: 114447907402473068}
+  - component: {fileID: 65180463330961208}
   m_Layer: 0
   m_Name: WindowBrownTaped
   m_TagString: Untagged
@@ -494,8 +496,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4266459454244236}
   - component: {fileID: 212119519553789890}
-  - component: {fileID: 65515885122710696}
-  - component: {fileID: 114354225204567120}
   m_Layer: 0
   m_Name: emptyMailbox
   m_TagString: Untagged
@@ -551,7 +551,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!1 &1786203343288758
 GameObject:
   m_ObjectHideFlags: 1
@@ -934,7 +934,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1922109323224262}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.47734264, y: -0.46457815, z: 0}
+  m_LocalPosition: {x: 25.562199, y: -2.077121, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4502157460497702}
@@ -1223,6 +1223,18 @@ Transform:
   m_Father: {fileID: 4862205228332542}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &65180463330961208
+BoxCollider:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1627777985975188}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 3.4599998, y: 4.38, z: 0.2}
+  m_Center: {x: 0, y: -0.00000023841858, z: 0}
 --- !u!65 &65252180241369118
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1235,18 +1247,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 20, y: 8, z: 1}
   m_Center: {x: 0, y: 4, z: 0}
---- !u!65 &65515885122710696
+--- !u!65 &65267788436260848
 BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730602748572662}
+  m_GameObject: {fileID: 1596203458170352}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.6999998, y: 3.8899999, z: 0.2}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.1399999, y: 3.5799997, z: 0.19999999}
+  m_Center: {x: -0.0000076293945, y: 0, z: 0}
 --- !u!65 &65564236077714458
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1319,19 +1331,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   name: mailbox
-  house: {fileID: 1922109323224262}
---- !u!114 &114354225204567120
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1730602748572662}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: emptyMailbox
   house: {fileID: 1922109323224262}
 --- !u!114 &114447907402473068
 MonoBehaviour:
@@ -1415,8 +1414,6 @@ MonoBehaviour:
     reference: {fileID: 1775436104425638}
   - name: camera
     reference: {fileID: 1657736090601156}
-  - name: emptyMailbox
-    reference: {fileID: 1730602748572662}
   - name: mailbox
     reference: {fileID: 1631762397599416}
   - name: chemicals

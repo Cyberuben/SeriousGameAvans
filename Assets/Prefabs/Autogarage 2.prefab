@@ -479,6 +479,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4611541431512120}
   - component: {fileID: 65713692574704808}
+  - component: {fileID: 114648854214707568}
   m_Layer: 0
   m_Name: Doors
   m_TagString: Untagged
@@ -889,7 +890,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1914882624950812}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
+  m_LocalPosition: {x: 0, y: 1.25, z: -1}
   m_LocalScale: {x: 5, y: 2.5, z: 1}
   m_Children:
   - {fileID: 4057567722145004}
@@ -925,7 +926,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871635581948654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1, y: 1, z: 0}
+  m_LocalPosition: {x: -3.2794352, y: -6.496193, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4329923137126854}
@@ -1029,7 +1030,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1252481478996758}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 8, y: 1.25, z: 0}
+  m_LocalPosition: {x: 8, y: 1.25, z: -1}
   m_LocalScale: {x: 5, y: 2.5, z: 1}
   m_Children:
   - {fileID: 4336140451058778}
@@ -1049,7 +1050,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1655459538150716}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -3.9974513, y: 1.503906, z: 0}
+  m_LocalPosition: {x: -3.9974513, y: 1.503906, z: -2}
   m_LocalScale: {x: 0.29553008, y: 0.2739386, z: 0.2739386}
   m_Children: []
   m_Father: {fileID: 4166419626656774}
@@ -1263,7 +1264,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1283354433600334}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -4, y: 1.5, z: 0}
+  m_LocalPosition: {x: -4, y: 1.5, z: -1}
   m_LocalScale: {x: 1, y: 1.1999999, z: 1}
   m_Children:
   - {fileID: 4401854552547192}
@@ -1317,7 +1318,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1328789466478122}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -9.5, y: 1.5, z: 0}
+  m_LocalPosition: {x: -9.5, y: 1.5, z: -1}
   m_LocalScale: {x: 2.73115, y: 1.1999999, z: 1}
   m_Children:
   - {fileID: 4906158704091982}
@@ -1507,7 +1508,7 @@ BoxCollider:
   m_GameObject: {fileID: 1239155397201206}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 2
   m_Size: {x: 1, y: 1.0000001, z: 0.2}
   m_Center: {x: 0, y: 0, z: 0}
@@ -1545,8 +1546,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 2.7473192, y: 2.9216332, z: 1}
+  m_Center: {x: -3.5999594, y: -3.7980173, z: 0}
 --- !u!65 &65974471109294340
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -1692,6 +1693,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: snow
   house: {fileID: 1871635581948654}
+--- !u!114 &114648854214707568
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1615531558243104}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1dd57df3abe5adc4684bf98804208db4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  controller: {fileID: 114832651201818142}
+  scene: GarageInside
 --- !u!114 &114652990024539810
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1766,8 +1780,6 @@ MonoBehaviour:
   indicators:
   - name: snow
     reference: {fileID: 1869622214618480}
-  - name: sign
-    reference: {fileID: 1239155397201206}
   - name: padlock
     reference: {fileID: 1817025612205782}
   - name: windowBrownTaped

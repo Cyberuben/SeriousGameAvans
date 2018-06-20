@@ -26,4 +26,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/HouseInside/HouseInside.unity
     guid: b78ba12fa21a36a489d22f1bdbd4871e
+  - enabled: 1
+    path: Assets/Scenes/GarageInside/GarageInside.unity
+    guid: 271a231a351d09940899c77e96b651bc
   m_configObjects: {}
