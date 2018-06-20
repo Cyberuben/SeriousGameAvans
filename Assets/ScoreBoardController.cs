@@ -8,9 +8,7 @@ using UnityEngine.UI;
 
 public class ScoreBoardController : MonoBehaviour
 {
-
     public Text rowExample;
-    public GameObject obj;
     private string urlToApi;
 
     //private IEnumerator PostExample()
@@ -56,11 +54,8 @@ public class ScoreBoardController : MonoBehaviour
         {
             Text text = rowExample;
             Text new_text = Instantiate(text, new Vector3(0, 0), Quaternion.identity);
-            new_text.text = "Gebruiker:" + users[i].UserName;
-            Text new_text2 = Instantiate(text, new Vector3(0, 0), Quaternion.identity);
-            new_text2.text = "Highscore:" + users[i].HighScore;
+            new_text.text = "Gebruiker:" + users[i].UserName + " | Highscore:" + users[i].HighScore + " | Department: " + users[i].Department;
             new_text.transform.SetParent(transform);
-            new_text2.transform.SetParent(obj.transform);
         }
     }
 

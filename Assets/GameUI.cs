@@ -90,6 +90,7 @@ public class GameUI : MonoBehaviour {
 
     public void ShowIndicatorInfo(string name)
     {
+        GameController.Instance.PauseGame();
         indicatorTitle.text = "Onbekend";
         indicatorDescription.text = "Onbekend";
         indicatorImage.sprite = null;
@@ -110,6 +111,7 @@ public class GameUI : MonoBehaviour {
 
     public void HideIndicatorInfo()
     {
+        GameController.Instance.ResumeGame();
         indicatorInfo.SetActive(false);
     }
 }

@@ -60,18 +60,6 @@ public class Street : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (Input.GetKeyDown(KeyCode.Space))
-        {
-            if (GameController.Instance.IsPaused())
-            {
-                GameController.Instance.ResumeGame();
-            }
-            else
-            {
-                GameController.Instance.PauseGame();
-            }
-        }
-
         if (GameController.Instance.IsPaused())
         {
             return;
