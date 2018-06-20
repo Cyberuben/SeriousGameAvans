@@ -1400,12 +1400,12 @@ MonoBehaviour:
       zijn echter wat zeldzamer om in huis te hebben liggen. Ook spullen als vaten
       en kolven worden in een standaard huishouden niet vaak gebruikt."
     image: {fileID: 21300000, guid: 02c246335d281fe459230c33a3a169e8, type: 3}
-  - key: hangslot
+  - key: padlock
     title: Hangslot
     description: Waarom zit er een hangslot op deze deur? Wat wordt er achter deze
       deur verborgen gehouden?
     image: {fileID: 21300000, guid: 0ea7ceff1819ff447bb79bb50e50d3ba, type: 3}
-  - key: hennepgeur
+  - key: ashtray
     title: Hennepgeur
     description: "Anijsgeur? Bij de productie van synthetische drugs worden chemicali\xEBn
       gebruikt.Door deze chemicali\xEBn ruikt een drugslab sterk naar anijs."
@@ -1428,8 +1428,18 @@ MonoBehaviour:
       de warmte die nodig is voor een hennepkwekerij op zolder de sneeuw snel doet
       smelten.
     image: {fileID: 21300000, guid: 68850885d10595c4d9310b3524d3b778, type: 3}
-  - key: window_brown_taped
-    title: Afgetapte ramen
+  - key: window
+    title: Afgeplakte ramen
+    description: Als je niks te verbergen hebt, wil je natuurlijk veel liever het
+      zonnetje door de ramen zien schijnen. Dit kan verdacht zijn.
+    image: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e, type: 3}
+  - key: sign
+    title: Afgeplakte ramen
+    description: Als je niks te verbergen hebt, wil je natuurlijk veel liever het
+      zonnetje door de ramen zien schijnen. Dit kan verdacht zijn.
+    image: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e, type: 3}
+  - key: jerrycan
+    title: Afgeplakte ramen
     description: Als je niks te verbergen hebt, wil je natuurlijk veel liever het
       zonnetje door de ramen zien schijnen. Dit kan verdacht zijn.
     image: {fileID: 21300000, guid: 12f106dc6990fcf408cba7883580be3e, type: 3}

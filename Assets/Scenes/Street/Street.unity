@@ -215,12 +215,16 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+<<<<<<< Updated upstream
     - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
         type: 2}
       propertyPath: indicators.Array.size
       value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+=======
+    - target: {fileID: 4863010098841420, guid: 703cf10523c4810409ec65397448dbe0, type: 2}
+>>>>>>> Stashed changes
       propertyPath: m_LocalPosition.x
       value: -19.4183
       objectReference: {fileID: 0}
@@ -250,15 +254,40 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
       propertyPath: m_RootOrder
+<<<<<<< Updated upstream
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
         type: 2}
       propertyPath: indicators.Array.data[4].name
       value: car
+=======
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[7].title
+      value: Afgeplakte ramen
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[7].key
+      value: WindowBrownTaped
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[4].key
+      value: Camera
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[3].key
+      value: Ashtray
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
         type: 2}
+<<<<<<< Updated upstream
       propertyPath: indicators.Array.data[5].name
       value: windowBrownTaped
       objectReference: {fileID: 0}
@@ -271,9 +300,14 @@ Prefab:
         type: 2}
       propertyPath: indicators.Array.data[6].name
       value: jerrycan
+=======
+      propertyPath: indicatorDefinitions.Array.data[2].key
+      value: Padlock
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
         type: 2}
+<<<<<<< Updated upstream
       propertyPath: indicators.Array.data[6].reference
       value: 
       objectReference: {fileID: 0}
@@ -328,6 +362,25 @@ Prefab:
     - target: {fileID: 4863010098841420, guid: 703cf10523c4810409ec65397448dbe0, type: 2}
       propertyPath: m_RootOrder
       value: 2
+=======
+      propertyPath: indicatorDefinitions.Array.data[0].key
+      value: Mailbox
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[1].key
+      value: Chemicals
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[5].key
+      value: Crack
+      objectReference: {fileID: 0}
+    - target: {fileID: 114523648242374948, guid: 703cf10523c4810409ec65397448dbe0,
+        type: 2}
+      propertyPath: indicatorDefinitions.Array.data[6].key
+      value: Snow
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 703cf10523c4810409ec65397448dbe0, type: 2}
