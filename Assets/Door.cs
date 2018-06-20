@@ -9,7 +9,7 @@ public class Door : MonoBehaviour {
 
     void OnMouseOver()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButtonDown(0) && !GameController.Instance.IsPaused())
         {
             GameController.Instance.enteredHouse = controller.houseIndex;
             SceneManager.LoadScene(scene);

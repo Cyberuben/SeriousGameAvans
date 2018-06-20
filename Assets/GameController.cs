@@ -48,7 +48,7 @@ public class GameController : Singleton<GameController> {
 
     public bool IsPaused()
     {
-        return gameState == GameState.PAUSED;
+        return gameState == GameState.PAUSED || gameState == GameState.ENDED;
     }
 
     public void AddScore(int amount)
@@ -157,17 +157,6 @@ public class GameController : Singleton<GameController> {
         if (TimeLeft > 0)
         {
             Score += TimeLeft * 10;
-        }
-
-        if (IndicatorsFound != IndicatorsTotal)
-        {
-            // Game over
-            Debug.Log("Game over");
-        }
-        else
-        {
-            // Finished game
-            Debug.Log("You got them all!");
         }
     }
 

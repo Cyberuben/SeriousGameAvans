@@ -95,26 +95,19 @@ public class GameUI : MonoBehaviour {
 
         score.text = GameController.Instance.Score.ToString("n0");
 
-        if (GameController.Instance.gameState == GameController.GameState.ENDED)
+        if (GameController.Instance.gameState == GameController.GameState.ENDED && GameController.Instance.TimeLeft == 0)
         {
-            if (GameController.Instance.IndicatorsFound == GameController.Instance.IndicatorsTotal)
-            {
-                gameOverHeader.text = "Je hebt alle indicatoren gevonden!";
-            }
-            else
-            {
-                gameOverHeader.text = string.Format("Je hebt maar {0} van de {1} indicatoren gevonden...", GameController.Instance.IndicatorsFound, GameController.Instance.IndicatorsTotal);
-            }
-
-            gameOverText.text = string.Format("Je hebt hiermee {0} punten behaald. Voer hier onder je naam in voor het scoreboard!", GameController.Instance.Score.ToString("n0"));
-
-            gameOverMenu.SetActive(true);
+            HideIndicatorInfo();
         }
 	}
 
     public void ShowIndicatorInfo(string name)
     {
-        GameController.Instance.PauseGame();
+        if (GameController.Instance.gameState != GameController.GameState.ENDED)
+        {
+            GameController.Instance.PauseGame();
+        }
+
         indicatorTitle.text = "Onbekend";
         indicatorDescription.text = "Onbekend";
         indicatorImage.sprite = null;
@@ -135,7 +128,25 @@ public class GameUI : MonoBehaviour {
 
     public void HideIndicatorInfo()
     {
-        GameController.Instance.ResumeGame();
+        if (GameController.Instance.gameState == GameController.GameState.ENDED)
+        {
+            if (GameController.Instance.IndicatorsFound == GameController.Instance.IndicatorsTotal)
+            {
+                gameOverHeader.text = "Je hebt alle indicatoren gevonden!";
+            }
+            else
+            {
+                gameOverHeader.text = string.Format("Je hebt maar {0} van de {1} indicatoren gevonden...", GameController.Instance.IndicatorsFound, GameController.Instance.IndicatorsTotal);
+            }
+
+            gameOverText.text = string.Format("Je hebt hiermee {0} punten behaald. Voer hier onder je naam in voor het scoreboard!", GameController.Instance.Score.ToString("n0"));
+
+            gameOverMenu.SetActive(true);
+        } else
+        {
+            GameController.Instance.ResumeGame();
+        }
+        
         indicatorInfo.SetActive(false);
     }
 

@@ -53,10 +53,13 @@ public class IndicatorController : MonoBehaviour {
 	
 	public void Found(string name)
     {
-        if (GameController.Instance.FoundIndicator(houseIndex))
+        if (!GameController.Instance.IsPaused())
         {
-            GameUI ui = GameObject.FindObjectOfType<GameUI>();
-            ui.ShowIndicatorInfo(name);
+            if (GameController.Instance.FoundIndicator(houseIndex))
+            {
+                GameUI ui = GameObject.FindObjectOfType<GameUI>();
+                ui.ShowIndicatorInfo(name);
+            }
         }
     }
 }
