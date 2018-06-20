@@ -531,10 +531,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   floors:
-  - {fileID: 0}
   - {fileID: 279251651}
-  - {fileID: 0}
-  currentFloor: 1
+  currentFloor: 0
   up: {fileID: 1729538814}
   down: {fileID: 1649544239}
   back: {fileID: 1637493854}
