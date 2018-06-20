@@ -61,17 +61,14 @@ public class GameUI : MonoBehaviour {
         Debug.Log(highscoreName.text);
     }
 
-    private void Start()
-    {
+    // Update is called once per frame
+    void Update () {
         if (!GameController.Instance.helpShown)
         {
             GameController.Instance.helpShown = true;
             ToggleHelp(true);
         }
-    }
 
-    // Update is called once per frame
-    void Update () {
         int timeLeft = GameController.Instance.TimeLeft;
         int seconds = timeLeft % 60;
         int minutes = Mathf.FloorToInt(timeLeft / 60);
