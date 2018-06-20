@@ -23,6 +23,10 @@ public class IndicatorController : MonoBehaviour {
                 {
                     indicator.reference.GetComponent<Renderer>().enabled = false;
                     indicator.reference.GetComponent<BoxCollider>().enabled = true;
+                    foreach (Renderer renderer in indicator.reference.GetComponentsInChildren<Renderer>())
+                    {
+                        renderer.enabled = false;
+                    }
                 }
                 else
                 {
