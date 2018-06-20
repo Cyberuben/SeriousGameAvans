@@ -28,6 +28,21 @@ public class IndicatorController : MonoBehaviour {
                         renderer.enabled = false;
                     }
                 }
+                else if (name.Equals("car"))
+                {
+                    indicator.reference.GetComponent<Renderer>().enabled = false;
+                    indicator.reference.GetComponent<BoxCollider>().enabled = true;
+                }
+                else if (name.Equals("sign"))
+                {
+                    indicator.reference.GetComponent<Renderer>().enabled = false;
+                    indicator.reference.GetComponent<BoxCollider>().enabled = true;
+                    indicator.reference.GetComponentInChildren<Canvas>().enabled = false;
+                    foreach (Renderer renderer in indicator.reference.GetComponentsInChildren<Renderer>())
+                    {
+                        renderer.enabled = false;
+                    }
+                }
                 else
                 {
                     indicator.reference.gameObject.SetActive(true);
