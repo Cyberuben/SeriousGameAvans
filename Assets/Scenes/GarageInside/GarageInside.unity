@@ -113,6 +113,92 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+<<<<<<< Updated upstream
+=======
+--- !u!1 &107874036 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1259961253320870, guid: 0bc71af361f68064da0abd3bb758988d,
+    type: 2}
+  m_PrefabInternal: {fileID: 232577925}
+--- !u!4 &107874037 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d,
+    type: 2}
+  m_PrefabInternal: {fileID: 232577925}
+--- !u!1 &130896078 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1413503948129608, guid: d7d1d55132013b44cbb961eb2bc397d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 299752680}
+--- !u!4 &130896079 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4627371853085408, guid: d7d1d55132013b44cbb961eb2bc397d9,
+    type: 2}
+  m_PrefabInternal: {fileID: 299752680}
+--- !u!1001 &232577925
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 279251654}
+    m_Modifications:
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4365821461184618, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_LocalScale.z
+      value: 0.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 114908139025894652, guid: 0bc71af361f68064da0abd3bb758988d,
+        type: 2}
+      propertyPath: house
+      value: 
+      objectReference: {fileID: 1515168590}
+    - target: {fileID: 1259961253320870, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 0bc71af361f68064da0abd3bb758988d, type: 2}
+  m_IsPrefabParent: 0
+>>>>>>> Stashed changes
 --- !u!1 &279251651
 GameObject:
   m_ObjectHideFlags: 0
@@ -200,7 +286,15 @@ Transform:
   - {fileID: 1604763381}
   - {fileID: 1790263266}
   - {fileID: 706564887}
+<<<<<<< Updated upstream
   - {fileID: 804560642}
+=======
+  - {fileID: 1255961369}
+  - {fileID: 468262810}
+  - {fileID: 107874037}
+  - {fileID: 130896079}
+  - {fileID: 687437319}
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -404,6 +498,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: car
   house: {fileID: 1515168590}
+<<<<<<< Updated upstream
 --- !u!1001 &825168209
 Prefab:
   m_ObjectHideFlags: 0
@@ -472,6 +567,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 2a11d0d3d5535da4aacf9256ffb8e95a, type: 2}
   m_IsPrefabParent: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1515168590
 GameObject:
   m_ObjectHideFlags: 0

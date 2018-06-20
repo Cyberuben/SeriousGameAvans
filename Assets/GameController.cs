@@ -12,6 +12,8 @@ public class GameController : Singleton<GameController> {
     public bool playAudio = false;
     public int enteredHouse;
 
+    public bool helpShown = false;
+
     public enum Difficulty
     {
         EASY,
@@ -174,7 +176,21 @@ public class GameController : Singleton<GameController> {
         if (!houses[houseIndex].indicatorFound)
         {
             houses[houseIndex].indicatorFound = true;
-            AddScore(100);
+            Score += 100;
+
+            if (difficulty == Difficulty.EASY)
+            {
+                Score += TimeLeft;
+            }
+            else if (difficulty == Difficulty.MEDIUM)
+            {
+                Score += TimeLeft + 60;
+            }
+            else if (difficulty == Difficulty.HARD)
+            {
+                Score += TimeLeft + 120;
+            }
+
             IndicatorsFound++;
 
             if (IndicatorsFound == IndicatorsTotal)
