@@ -20,7 +20,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4783790045466508}
   - component: {fileID: 212923765526305312}
-  - component: {fileID: 114182950978996802}
   m_Layer: 0
   m_Name: SnowOnlyLeft (4)
   m_TagString: Untagged
@@ -37,7 +36,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4204641453763736}
   - component: {fileID: 212272306622731840}
-  - component: {fileID: 114442922725393780}
   m_Layer: 0
   m_Name: SnowOnlyLeft (5)
   m_TagString: Untagged
@@ -189,7 +187,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4748640195335216}
   - component: {fileID: 212103370818439240}
-  - component: {fileID: 114009418786529568}
   m_Layer: 0
   m_Name: SnowOnlyLeft (3)
   m_TagString: Untagged
@@ -238,7 +235,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4264738297313830}
   - component: {fileID: 212426696474891612}
-  - component: {fileID: 114938349512953726}
   m_Layer: 0
   m_Name: SnowOnlyLeft (2)
   m_TagString: Untagged
@@ -578,7 +574,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4916908156859050}
   - component: {fileID: 212311387970009540}
-  - component: {fileID: 114431477858910460}
   m_Layer: 0
   m_Name: SnowOnlyLeft
   m_TagString: Untagged
@@ -677,7 +672,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4698476644039738}
   - component: {fileID: 212802590878458966}
-  - component: {fileID: 114667651953460842}
   m_Layer: 0
   m_Name: SnowOnlyLeft (1)
   m_TagString: Untagged
@@ -729,7 +723,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4080202220885030}
   - component: {fileID: 212499897411232898}
-  - component: {fileID: 114868292392559370}
   m_Layer: 0
   m_Name: SnowOnlyLeft (7)
   m_TagString: Untagged
@@ -794,7 +787,6 @@ GameObject:
   m_Component:
   - component: {fileID: 4682798774852886}
   - component: {fileID: 212017631758887182}
-  - component: {fileID: 114088623565225894}
   m_Layer: 0
   m_Name: SnowOnlyLeft (6)
   m_TagString: Untagged
@@ -926,7 +918,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1871635581948654}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -3.2794352, y: -6.496193, z: 0}
+  m_LocalPosition: {x: -16.408682, y: 4.026026, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4329923137126854}
@@ -1560,19 +1552,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 3.46, y: 4.3800006, z: 0.20000003}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114009418786529568
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1274531490937580}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
 --- !u!114 &114024354543140784
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1589,32 +1568,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &114088623565225894
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1970521129663638}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
---- !u!114 &114182950978996802
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1004087543554630}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
 --- !u!114 &114270652645219436
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1641,32 +1594,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: padlock
   house: {fileID: 1871635581948654}
---- !u!114 &114431477858910460
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1725945850947510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
---- !u!114 &114442922725393780
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1021782180906158}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
 --- !u!114 &114629676165936210
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1719,19 +1646,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   name: signText
   house: {fileID: 1871635581948654}
---- !u!114 &114667651953460842
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1849674699424304}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
 --- !u!114 &114717266403397200
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -1782,6 +1696,14 @@ MonoBehaviour:
     reference: {fileID: 1869622214618480}
   - name: padlock
     reference: {fileID: 1817025612205782}
+  - name: crack
+    reference: {fileID: 0}
+  - name: chemicals
+    reference: {fileID: 0}
+  - name: jerrycan5
+    reference: {fileID: 0}
+  - name: car
+    reference: {fileID: 0}
   - name: windowBrownTaped
     reference: {fileID: 1655459538150716}
 --- !u!114 &114842319199634818
@@ -1805,32 +1727,6 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
---- !u!114 &114868292392559370
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1899716748136020}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
---- !u!114 &114938349512953726
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1299108541544092}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  name: SnowOnlyLeft
-  house: {fileID: 0}
 --- !u!212 &212017631758887182
 SpriteRenderer:
   m_ObjectHideFlags: 1
