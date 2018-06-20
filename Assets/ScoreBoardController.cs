@@ -5,10 +5,13 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class ScoreBoardController : MonoBehaviour
 {
-    public Text rowExample;
+    public GameObject rowPrefab;
+    public GameObject header;
+    public GameObject canvas;
     private string urlToApi;
 
     //private IEnumerator PostExample()
@@ -36,26 +39,36 @@ public class ScoreBoardController : MonoBehaviour
 
     IEnumerator StartGetUsers()
     {
-        urlToApi = "localhost:8000/api/users/10";
+        urlToApi = "https://seriousgame.rsrv.pw/api/users/10";
         User[] users;
         using (WWW www = new WWW(urlToApi))
         {
             //string jsonValue = www.text;
             yield return www;
             users = FromJson<User>(www.text);
-            int i = 0;
         }
         //users = new User[] { new User("Test users", 100), new User("test user 2",200), new User("test user 3", 200), new User("test user 4", 200), new User("Test user", 100), new User("test user 2", 200), new User("test user 3", 200), new User("test user 4", 200), new User("Test user", 100), new User("test user 2", 200) };
 
 
         Camera camera = Camera.main;
         Canvas canvas = GetComponent<Canvas>();
+
+        Vector3 startPosition = header.GetComponent<RectTransform>().anchoredPosition;
+
         for (int i = 0; i < users.Length; i++)
         {
-            Text text = rowExample;
-            Text new_text = Instantiate(text, new Vector3(0, 0), Quaternion.identity);
-            new_text.text = "Gebruiker:" + users[i].UserName + " | Highscore:" + users[i].HighScore + " | Department: " + users[i].Department;
-            new_text.transform.SetParent(transform);
+            GameObject row = Instantiate(rowPrefab);
+            ScoreboardRow instance = row.GetComponent<ScoreboardRow>();
+            instance.transform.parent = canvas.transform;
+            RectTransform instanceTransform = instance.GetComponent<RectTransform>();
+            instanceTransform.anchoredPosition = startPosition + new Vector3(0, -40 * (i + 1), 0);
+            instanceTransform.anchorMin = new Vector2(0.5f, 1);
+            instanceTransform.anchorMax = new Vector2(0.5f, 1);
+            instanceTransform.pivot = new Vector2(0.5f, 0.5f);
+            instance.position.text = string.Format("#{0}", i + 1);
+            instance.name.text = users[i].UserName;
+            instance.department.text = users[i].Department;
+            instance.score.text = users[i].HighScore.ToString("n0");
         }
     }
 
@@ -66,18 +79,14 @@ public class ScoreBoardController : MonoBehaviour
         return wrapper.array;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            StartCoroutine(GameController.Instance.BackToStart());
-        }
-    }
-
     [Serializable]
     private class Wrapper<T>
     {
         public T[] array;
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }

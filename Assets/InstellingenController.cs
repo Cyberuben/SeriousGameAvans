@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class InstellingenController : MonoBehaviour {
     public Toggle musicOn;
@@ -76,11 +77,6 @@ public class InstellingenController : MonoBehaviour {
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Backspace))
-        {
-            StartCoroutine(GameController.Instance.BackToStart());
-        }
-
         if (GetAnyKey(KeyCode.P, KeyCode.A, KeyCode.M))
         {
             isEasterEggActivated = true;
@@ -93,5 +89,10 @@ public class InstellingenController : MonoBehaviour {
             if (Input.GetKey(key))
                 return true;
         return false;
+    }
+
+    public void BackToMenu()
+    {
+        SceneManager.LoadScene("Menu");
     }
 }
