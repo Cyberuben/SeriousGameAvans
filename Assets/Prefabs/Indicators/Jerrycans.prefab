@@ -65,7 +65,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 94ff11a2215e52b4b9b4ec5465efe0ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  name: jerrycans
+  name: jerrycan
   house: {fileID: 0}
 --- !u!212 &212789348006515738
 SpriteRenderer:
