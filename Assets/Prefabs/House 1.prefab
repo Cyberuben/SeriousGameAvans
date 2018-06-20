@@ -607,7 +607,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1443782179754364}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -27.865694, y: 0.9509839, z: 0}
+  m_LocalPosition: {x: -26.26218, y: 1.5915945, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4798249122100976}
@@ -1097,15 +1097,11 @@ MonoBehaviour:
     reference: {fileID: 0}
   - name: chemicals
     reference: {fileID: 0}
-  - name: jerrycan5
-    reference: {fileID: 0}
-  - name: jerrycan2
-    reference: {fileID: 0}
   - name: ashtray
     reference: {fileID: 0}
   - name: windowBrownTaped
     reference: {fileID: 0}
-  - name: jerrycans
+  - name: jerrycan
     reference: {fileID: 0}
   - name: padlock
     reference: {fileID: 0}

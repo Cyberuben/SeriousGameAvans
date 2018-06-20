@@ -208,6 +208,83 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   sidewalk: {fileID: 1450653657929320, guid: 3cea8d197d7f22841a50dd253da7d1b6, type: 2}
   gameControllerConfig: {fileID: 222301698}
+--- !u!1001 &87898904
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
+        type: 2}
+      propertyPath: indicators.Array.size
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.4183
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 0.60257244
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4166419626656774, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
+        type: 2}
+      propertyPath: indicators.Array.data[4].name
+      value: car
+      objectReference: {fileID: 0}
+    - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
+        type: 2}
+      propertyPath: indicators.Array.data[5].name
+      value: windowBrownTaped
+      objectReference: {fileID: 0}
+    - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
+        type: 2}
+      propertyPath: indicators.Array.data[5].reference
+      value: 
+      objectReference: {fileID: 87898905}
+    - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
+        type: 2}
+      propertyPath: indicators.Array.data[6].name
+      value: jerrycan
+      objectReference: {fileID: 0}
+    - target: {fileID: 114832651201818142, guid: 3123c423ef672384d84083e8ab25fd23,
+        type: 2}
+      propertyPath: indicators.Array.data[6].reference
+      value: 
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3123c423ef672384d84083e8ab25fd23, type: 2}
+  m_IsPrefabParent: 0
+--- !u!1 &87898905 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1655459538150716, guid: 3123c423ef672384d84083e8ab25fd23,
+    type: 2}
+  m_PrefabInternal: {fileID: 87898904}
 --- !u!1 &222301698 stripped
 GameObject:
   m_PrefabParentObject: {fileID: 1523083551517180, guid: 2b103cd73d6ea3c45a8c1b21813dece4,
@@ -357,5 +434,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
