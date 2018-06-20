@@ -49,6 +49,7 @@ public class GameUI : MonoBehaviour {
 
     public void ReturnToMenu()
     {
+        GameController.Instance.cameraPosition = Vector3.zero;
         GameController.Instance.gameState = GameController.GameState.MENU;
         _scoreSubmitted = false;
         SceneManager.LoadScene("Menu");
