@@ -16,7 +16,7 @@ public class MailboxLabelController : MonoBehaviour {
 	}
     private void OnMouseDown()
     {
-        if (GameObject.Find("AchievementWall"))
+        if (GameObject.Find("AchievementMailbox"))
         {
             descriptionText.text = "Brievenbussen puilen uit van de post. Óf de bewoner heeft een leuke vakantie, of hij gebruikt het pand voor andere doeleinden dan er simpelweg wonen.";
         }

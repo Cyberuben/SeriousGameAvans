@@ -1534,8 +1534,9 @@ MonoBehaviour:
   indicatorDefinitions:
   - key: mailbox
     title: Brievenbus
-    description: Een volle brievenbus kan er op wijzen dat dit pand alleen voor het
-      adres gebruikt wordt
+    description: "Brievenbussen puilen uit van de post. \xD3f de bewoner heeft een
+      leuke vakantie, of hij gebruikt het pand voor andere doeleinden dan er simpelweg
+      wonen."
     image: {fileID: 21300000, guid: 099b007cf3055d340a76a0367936954b, type: 3}
   - key: chemicals
     title: Chemicalien
@@ -1590,7 +1591,8 @@ MonoBehaviour:
     image: {fileID: 21300000, guid: 494abc77a37ef344ca10ecdd125bea03, type: 3}
   - key: car
     title: Geen auto's?
-    description: Een autogarage zonder auto's? Dit is verdacht.
+    description: "Dit autobedrijf doet kennelijk niks met auto\u2019s. Dit kan betekenen
+      dat dit bedrijf er een andere boekhouding op nahoudt."
     image: {fileID: 21300000, guid: 9db0a238de612e44eb346a3513a58b71, type: 3}
 --- !u!114 &114534359686886770
 MonoBehaviour:
